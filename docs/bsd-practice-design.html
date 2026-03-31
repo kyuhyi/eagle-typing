@@ -1,0 +1,40 @@
+<!-- BSD TYPING 자리연습 화면 디자인 참조
+
+  LAYOUT: 3-column (좌 사이드바 | 중앙 연습 | 우 데코)
+
+  LEFT SIDEBAR (w-80):
+  - glass panel: bg-surface-container/70 backdrop-blur-2xl, border-l-2 border-r-2 border-outline/40
+  - 장식 코너: 골드(tertiary/60) 2px 보더
+  - "전투 통계" 제목 + shield_with_heart 아이콘(tertiary, FILL 1)
+  - 진행 시간: text-3xl font-bold tabular-nums
+  - 정확도: progress bar (gradient from-primary to-tertiary), shadow glow
+  - 오타: text-2xl font-bold text-error
+  - 현재 연습 정보: bg-surface-container-low, auto_stories 아이콘
+
+  CENTER (flex-1):
+  - TARGET 문자 표시: 192x256 glass card
+    - "TARGET" 라벨 (text-[10px] text-primary/40)
+    - 문자: text-[120px] font-bold, drop-shadow purple glow
+    - 힌트: "왼쪽 검지 손가락" text-xs
+    - 배경 blur glow: bg-primary/5 blur-3xl
+
+  - KEYBOARD: bg-surface-container-lowest p-8 rounded-[2rem]
+    - 한글 두벌식 배열 grid 30cols
+    - 일반 키: bg-surface-container, border-outline-variant/10, text-on-surface-variant/60
+    - TARGET 키: bg-surface-container-highest, border-2 border-tertiary, text-tertiary
+      key-target glow: box-shadow 0 0 15px rgba(250,189,0,0.4)
+      scale-110 transform
+    - 손 가이드: gradient blur overlay
+
+  - 하단 힌트: ESC=연습중단, F5=통계초기화
+
+  RIGHT DECO (w-12):
+  - 세로 pill shape, tertiary dot + gradient line
+  - "SANCTUARIUM" 세로 텍스트
+
+  BACKGROUND:
+  - primary/5 blur-[120px] 상단좌
+  - tertiary/5 blur-[160px] 하단우
+
+  NAV: 돌아가기 + "검은 성소 (BSD TYPING)" gradient text + "자리 연습" gold label
+-->
