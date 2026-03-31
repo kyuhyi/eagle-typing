@@ -318,7 +318,7 @@ export default function WordPractice({
               type="text"
               onChange={handleChange}
               onCompositionEnd={handleCompositionEnd}
-              onKeyDown={(e) => { if (e.key === 'Escape') onExit(); }}
+              onKeyDown={(e) => { if (e.key === 'Escape') onExit(); if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (input === currentWord) advanceWord(); } }}
               placeholder={started ? '' : '단어를 입력하세요…'}
               className="w-full text-2xl text-center py-4 px-6 rounded-xl outline-none placeholder-[#494456]/40"
               style={{
